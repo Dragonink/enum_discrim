@@ -1,0 +1,19 @@
+[package]
+name = "enum_discrim-proc"
+version = { workspace = true }
+authors = { workspace = true }
+description = { workspace = true }
+readme = { workspace = true }
+repository = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+proc-macro = true
+
+[dependencies]
+darling = "0"
+proc-macro2 = "1"
+quote = "1"
+[dependencies.syn]
+version = "1"
+features = ["extra-traits"]
